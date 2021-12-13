@@ -8,17 +8,15 @@ FirebaseJson json;
 WiFiClient client;
 HTTPClient http;
 
-const char* ssid     = "THAILUAN";
-const char* password = "1234512345";
-const char* serverName = "http://doantotnghieplinhluan.cf/esp32_data.php";
-String apiKeyValue = "doantotnghiep";
+const char* ssid     = "****";
+const char* password = "****";
+const char* serverName = "****";
+String apiKeyValue = "****";
 unsigned long t_led=0, mi_led=0, t1=0;
 byte x=0;
 int i=0, onoff=0, ok=0, left, right, option=1, onoff_old, ok_old, option_old;
 String ID_patient, Full_name, DOB, Address, Right_eye, Left_eye;
 
-#define BUF_SIZE (1024)
-#define RD_BUF_SIZE (BUF_SIZE)
 TaskHandle_t XCore0;
 TaskHandle_t XCore1;
 QueueHandle_t structQueue;
@@ -27,8 +25,8 @@ struct onoff_ok{
   int ok_struct;
 };
 
-#define FIREBASE_HOST "https://datn-e7a2f-default-rtdb.firebaseio.com/"
-#define FIREBASE_AUTH "RbfdmRGWscNqzFhaNisXzWipDxOaqjXhSi4wm0fb"
+#define FIREBASE_HOST "****"
+#define FIREBASE_AUTH "****"
 
 void connect_wifi(){
   WiFi.mode(WIFI_AP_STA);
